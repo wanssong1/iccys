@@ -18,6 +18,13 @@ function setup() {
 
 function draw() {
   
+  if (value==0){
+    col.bc=0;
+    col.r=0;
+    col.g=0;
+    col.b=0;
+  }
+  
   if (value==1){
     col.bc=255;
     col.r=255;
@@ -97,6 +104,9 @@ function keyTyped(){
   }
   else if (key=='w'){    
     value=4;
+  }
+  else if (key=='d'){    
+    value=0;
   }
 }
 
